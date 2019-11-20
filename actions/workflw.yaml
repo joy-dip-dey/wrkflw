@@ -1,10 +1,9 @@
- version: 1.0
+version: 1.0
 
 description: A basic workflow.
 
 input:
   - nam
-  
 
 tasks:
   task1:
