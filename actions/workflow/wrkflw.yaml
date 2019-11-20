@@ -8,13 +8,10 @@ input:
 tasks:
   task1:
     input: 
-      nam:  'Joydip'
+      nam:  <% ctx(nam) %>
     action: workflow_pack.getname
     next:
       - when: <% succeeded() %>
         publish:
           - stdout: <% result().stdout %>
           - stderr: <% result().stderr %>
-
-output:
-  - stdout: <% result().stdout %>
