@@ -8,7 +8,7 @@ input:
 tasks:
   task1:
     input: 
-      -nam = <% ctx().nam %>
+      nam = <% ctx().nam %>
     action: workflow_pack.getname
     next:
       - when: <% succeeded() %>
@@ -17,4 +17,4 @@ tasks:
           - stderr: <% result().stderr %>
 
 output:
-  - stdout: <% ctx(stdout) %>
+  - stdout: <% result().stdout %>
