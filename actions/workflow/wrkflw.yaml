@@ -1,13 +1,18 @@
----
-name: workflw
-pack: workflow_pack
-runner_type: "python-script"
-description: returns the name
-enabled: true
-entry_point: workflow/wrkflw.yaml
-parameters:
-   nam:
-    type: string
-    description: Name Input
-    required: true
-    position: 1
+version: 1.0
+
+description: A basic workflow.
+
+input:
+  - nam
+
+tasks:
+  task1:
+    action: workflow_pack.getname.yaml
+    next:
+      - when: <% succeeded() %>
+        publish:
+          - stdout: <% result().stdout %>
+          - stderr: <% result().stderr %>
+
+output:
+  - stdout: <% ctx(stdout) %>
