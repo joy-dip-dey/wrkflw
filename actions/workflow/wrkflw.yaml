@@ -5,7 +5,7 @@ description: A basic workflow.
 input:
   - nam
 
- vars:
+vars:
   - result: ''
 
 tasks:
