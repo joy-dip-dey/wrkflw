@@ -8,7 +8,7 @@ input:
 tasks:
   task1:
     input: 
-      nam = <% ctx().nam %>
+      nam:  'Joydip'
     action: workflow_pack.getname
     next:
       - when: <% succeeded() %>
