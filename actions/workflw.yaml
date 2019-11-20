@@ -1,7 +1,7 @@
 ---
 name: workflw
 pack: workflow_pack
-runner_type: "python-script"
+runner_type: orquesta
 description: returns the name
 enabled: true
 entry_point: workflow/wrkflw.yaml

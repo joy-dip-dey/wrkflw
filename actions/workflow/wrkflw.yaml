@@ -7,7 +7,7 @@ input:
 
 tasks:
   task1:
-    action: workflow_pack.getname.py
+    action: workflow_pack.getname
     next:
       - when: <% succeeded() %>
         publish:
