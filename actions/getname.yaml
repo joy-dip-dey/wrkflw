@@ -9,6 +9,6 @@ parameters:
    nam:
     type: string
     description: Name Input
-      required: true
-      position: 1
+    required: true
+    position: 1
  
