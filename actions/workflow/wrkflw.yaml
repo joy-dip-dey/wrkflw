@@ -1,0 +1,19 @@
+version: 1.0
+
+description: A basic workflow.
+
+input:
+  - nam
+  
+
+tasks:
+  task1:
+    action: workflow_pack.getname
+    next:
+      - when: <% succeeded() %>
+        publish:
+          - stdout: <% result().stdout %>
+          - stderr: <% result().stderr %>
+
+output:
+  - stdout: <% ctx(stdout) %>

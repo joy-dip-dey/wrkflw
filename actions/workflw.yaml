@@ -1,0 +1,14 @@
+---
+name: workflw
+pack: workflow_pack
+runner_type: "python-script"
+description: returns the name
+enabled: true
+entry_point: workflow/wrkflw.yaml
+parameters:
+   nam:
+    type: string
+    description: Name Input
+      required: true
+      position: 1
+ 

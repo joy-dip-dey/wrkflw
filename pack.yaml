@@ -1,0 +1,10 @@
+---
+ref : workflow_pack
+name : Pack for learning workflow
+description: Pack for learning workflow
+keywords:
+    - workflow
+    - Add
+version: 0.1.0
+author : Joydip Dey
+email: joydip.dey@nihilentanalytics.com
