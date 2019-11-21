@@ -1,0 +1,17 @@
+name: wish
+pack: workflow_pack
+runner_type: "python-script"
+description: returns a wish
+enabled: true
+entry_point: wish.py
+parameters:
+   person:
+     type: string
+     description: Name Input
+     required: true
+     position: 1
+   ctim:
+     type: numeric
+     description: time Input
+     required: true
+     position: 2
