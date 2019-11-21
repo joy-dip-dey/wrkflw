@@ -7,8 +7,12 @@ enabled: true
 entry_point: workflows/wrkflw.yaml
 parameters:
    nam:
-    type: string
-    description: Name Input
-    required: true
-    position: 1
-    
+     type: string
+     description: Name Input
+     required: true
+     position: 1
+   tim:
+     type: string
+     description: Name Input
+     required: true
+     position: 1
