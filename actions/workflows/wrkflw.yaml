@@ -34,4 +34,4 @@ tasks:
           - stderr: <% result().stderr %>
 
 output:
-  - result: <% task(task2).resu.resu %> >
+  - resu: 
