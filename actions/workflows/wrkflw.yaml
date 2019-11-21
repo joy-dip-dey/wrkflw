@@ -22,7 +22,7 @@ tasks:
 
   task2:
     input: 
-      person:  <% ctx(result) %>
+      person: <% result().stdout %> 
       ctim:  <% ctx(tim) %>
     action: workflow_pack.wish
     next:
