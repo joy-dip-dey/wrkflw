@@ -28,8 +28,7 @@ tasks:
     next:
       - when: <% succeeded() %>
         publish:
-          - result: <% result().stdout %>
-
+          - result: <% ctx(result().stdout) %>
           - stdout: <% result().stdout %>
           - stderr: <% result().stderr %>
 
