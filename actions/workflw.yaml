@@ -12,7 +12,7 @@ parameters:
      required: true
      position: 1
    tim:
-     type: string
-     description: Name Input
+     type: integer
+     description: Time of the day in hours
      required: true
-     position: 1
+     position: 2
