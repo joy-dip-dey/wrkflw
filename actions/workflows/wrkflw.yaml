@@ -8,6 +8,7 @@ input:
 
 vars:
   - result: ''
+  - resu: ''
 
 tasks:
   task1:
@@ -23,14 +24,14 @@ tasks:
   task2:
     input: 
       person: <% task(task1).result.result %> 
-      ctim:  <% ctx(tim) %>
+      ctim:   <% ctx(tim) %>
     action: workflow_pack.wish
     next:
       - when: <% succeeded() %>
         publish:
-          - result: <% result().stdout %>
+          - resu: <% result().stdout %>
           - stdout: <% result().stdout %>
           - stderr: <% result().stderr %>
 
 output:
-  - result: <% ctx(result) %>
+  - result: <% task(task2).resu.resu %> >
