@@ -11,7 +11,7 @@ parameters:
      required: true
      position: 1
    ctim:
-     type: numeric
+     type: integer
      description: time Input
      required: true
      position: 2
