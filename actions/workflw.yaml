@@ -4,7 +4,7 @@ pack: workflow_pack
 runner_type: orquesta
 description: returns the name
 enabled: true
-entry_point: workflow/wrkflw.yaml
+entry_point: workflows/wrkflw.yaml
 parameters:
    nam:
     type: string
