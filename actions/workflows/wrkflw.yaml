@@ -29,7 +29,7 @@ tasks:
     next:
       - when: <% succeeded() %>
         publish:
-          - resu: <% result().stdout %>
+          - resu: <% task(task2).result.result %> 
           - stdout: <% result().stdout %>
           - stderr: <% result().stderr %>
 
