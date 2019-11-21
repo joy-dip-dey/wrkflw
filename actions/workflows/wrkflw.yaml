@@ -33,4 +33,4 @@ tasks:
           - stderr: <% result().stderr %>
 
 output:
-  - result: <% ctx(result) %>
+  - result: 
