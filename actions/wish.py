@@ -11,4 +11,5 @@ class MyAction(Action):
         print(timenow)
         print(hrofdy)
         print('abcdef')
+        return(timenow +' abc ' +hrofdy)
         #return('Hi ' + person + ' Good ' + part_of_a_day(hrofdy))
