@@ -10,4 +10,5 @@ class MyAction(Action):
         hrofdy = timenow.hour
         print(timenow)
         print(hrofdy)
+        print('abcdef')
         return('Hi ' + person + ' Good ' + part_of_a_day(hrofdy))
