@@ -8,8 +8,4 @@ class MyAction(Action):
     def run(self, person):
         timenow = datetime.datetime.now()
         hrofdy = timenow.hour
-        print(timenow)
-        print(hrofdy)
-        print('abcdef')
-        return(timenow +' abc ' +hrofdy)
-        #return('Hi ' + person + ' Good ' + part_of_a_day(hrofdy))
+        return('Hi ' + person + ' Good ' + part_of_a_day(hrofdy))
