@@ -10,8 +10,4 @@ parameters:
      description: Name Input
      required: true
      position: 1
-   ctim:
-     type: integer
-     description: time Input
-     required: true
-     position: 2
+   

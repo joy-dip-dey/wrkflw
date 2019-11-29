@@ -4,7 +4,6 @@ description: A basic workflow.
 
 input:
   - nam
-  - tim
 
 vars:
   - result: ''
@@ -24,7 +23,6 @@ tasks:
   task2:
     input: 
       person: <% task(task1).result.result %> 
-      ctim:   <% ctx(tim) %>
     action: workflow_pack.wish
     next:
       - when: <% succeeded() %>
